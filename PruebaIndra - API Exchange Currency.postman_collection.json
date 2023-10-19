@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "c25f52dd-30a0-49bf-a8e5-c5b762372211",
+		"name": "PruebaIndra - API Exchange Currency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9750383"
+	},
+	"item": [
+		{
+			"name": "Create Operation Exchange Currency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/exchange?amount=100.00&origen=PEN&destino=USD&tipoDeCambio=3.87",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"exchange"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "100.00"
+						},
+						{
+							"key": "origen",
+							"value": "PEN"
+						},
+						{
+							"key": "destino",
+							"value": "USD"
+						},
+						{
+							"key": "tipoDeCambio",
+							"value": "3.87"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Exchange Currency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/exchange?amount=100.00&origen=PEN&destino=USD&tipoDeCambio=3.87",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"exchange"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "100.00"
+						},
+						{
+							"key": "origen",
+							"value": "PEN"
+						},
+						{
+							"key": "destino",
+							"value": "USD"
+						},
+						{
+							"key": "tipoDeCambio",
+							"value": "3.87"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
