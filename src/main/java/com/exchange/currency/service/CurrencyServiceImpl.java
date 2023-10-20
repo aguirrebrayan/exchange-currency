@@ -26,4 +26,12 @@ public class CurrencyServiceImpl implements CurrencyService {
     public List<Currency> getAll(){
         return currencyRepository.findAll();
     }
+    @Override
+    public Currency update(Currency currency){
+        Currency currencydb = currencyRepository.findById(currency.getId()).get();
+        currencydb.setAmount(currency.getAmount());
+        currencydb.setTipoDeCambio(currency.getTipoDeCambio());
+        currencydb.setAmountWithExchange(currency.getTipoDeCambio()*currency.getAmount());
+        return currencyRepository.save(currencydb);
+    }
 }

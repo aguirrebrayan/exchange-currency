@@ -6,4 +6,5 @@ public interface CurrencyService {
     Currency createOperation(Currency currency);
     Currency getOperationById(Long id);
     List<Currency> getAll();
+    Currency update(Currency currency);
 }

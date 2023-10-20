@@ -35,4 +35,9 @@ public class CurrencyController {
         ResponseEntity getAll(){
                 return new ResponseEntity(currencyService.getAll(), HttpStatus.OK);
         }
+        @PostMapping("/update/{id}")
+        ResponseEntity updateAmount(@PathVariable Long id, @RequestBody Currency currency){
+                return new ResponseEntity(currencyService.update(currency), HttpStatus.OK);
+        }
+
 }
